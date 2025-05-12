@@ -1,0 +1,64 @@
+/* Banner.css */
+.content {
+    padding: 40px 20px;
+}
+
+.image-container-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 70px;
+    background-color: #F8F3EF; /* Light beige background */
+}
+
+.image-container-home img {
+    width: 800px;
+    height: 542px;
+    border-radius: 10px;
+    margin-left: -20px;
+}
+
+.features-container {
+    width: 50%;
+    height: 539px;
+    padding: 20px;
+    background-color: #f5fff6; /* Light pastel blue */
+    border-radius: 10px;
+    padding-top: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: -15px;
+}
+
+.features-container h2 {
+    color: #0A2342; /* Dark navy for headings */
+    margin-bottom: 20px;
+}
+
+.features-container ul {
+    margin-top: 60px;
+    list-style: none;
+    padding: 0;
+}
+
+.features-container ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.features-container ul li::before {
+    content: '✔';
+    color: #50C878; /* Green checkmark to represent health */
+    font-weight: bold;
+    margin-right: 10px;
+}

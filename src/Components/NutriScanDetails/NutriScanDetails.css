@@ -1,0 +1,212 @@
+
+.nutriscan-container{
+  background-color: #ffffff;
+}
+.header {
+  text-align: left;
+}
+
+.header-nutriscan h1 {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  font-weight: 800;
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 130px;
+}
+
+/*Benefits banner*/
+
+.benefits{
+  display: grid;
+  grid-template-columns: 0.5fr 0.75fr;
+  gap: 40px;
+}
+
+.list{
+  margin-left: 180px;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.benefits li {
+  margin: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.images img {
+  max-width: 380px;
+  margin-left: 110px;
+  margin-top: -25px;
+  border-radius: 10px;
+  box-shadow: 3px -3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Banner in the middle*/
+
+.container{
+  display: flex;
+}
+
+.left-side img{
+  max-width: 400px;
+  margin-right: 150px;
+  margin-top: 0px;
+  margin-left: -70px;
+  border-radius: 10px; 
+  box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.help-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  margin-top: 58px;
+  margin-left: -55px;
+  border-radius: 15px;
+  width: 780px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.help-section h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  font-weight: 400;
+}
+
+.help-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.help-item {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.help-item:hover {
+  background-color: #c0392b;
+}
+
+/* Styling Hr tag */
+.NutriScan-hr {
+  border: 0; /* Remove the default border */
+  height: 0; /* No solid line height */
+  margin: 30px auto; /* Add vertical spacing and center it */
+  border-bottom: 7px dotted #ff4d4d; /* Dashed red border for a unique look */
+  width: 300px; /* Slightly increase width for better proportion */
+  opacity: 0.8; /* Subtle transparency for a softer effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Hover Effect */
+.NutriScan-hr:hover {
+  width: 240px; /* Slight expansion on hover */
+  opacity: 1; /* Remove transparency for emphasis */
+  border-bottom: 4px solid #ff0000; /* Change to solid red for a bold hover effect */
+}
+
+/*Cards*/
+
+.nutriscan-details{
+  margin-top: 35px;
+}
+
+.nutriscan-details h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.nutriscan-details span {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+
+.my-cards{
+  margin-top: 45px;
+  margin-left: 95px;
+}
+
+.details-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.card{
+  max-width: 548px;
+  border: 0.5px solid #d3a7a2;
+}
+
+.card-title{
+  color: #e74c3c;
+}
+
+#card3-container{
+  margin-top: -15px;
+  margin-left: 380px;
+}
+
+
+/*banner at the bottom*/
+
+.cta {
+  width: 550px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 400px;
+  text-align: center;
+  padding: 25px;
+  background-color: #f3f6f7;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  background-color: #c0392b;
+}
+
+.cta-right-container img {
+  max-width: 70px;
+  margin-left: -9.5px;
+  border-radius: 10px;
+}

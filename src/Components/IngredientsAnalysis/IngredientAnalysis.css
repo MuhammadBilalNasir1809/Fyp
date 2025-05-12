@@ -1,0 +1,327 @@
+.ingredient-analysis {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.ingredient-analysis-form {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ingredient-analysis-form input[type="file"] {
+  display: none;
+}
+
+.ingredient-analysis-form label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-analysis-form label:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.uploaded-image {
+  display: flex;
+  flex-direction: column; /* Align the image and buttons vertically */
+  align-items: center; /* Center horizontally */
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+.uploaded-image img {
+  max-width: 100%;
+  max-height: 400px; /* Constrain the image height for better layout */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+
+/* Improved Button Styling */
+.ingredient-analysis-form label,
+.ingredient-analysis-form button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Choose File Button */
+.ingredient-analysis-form label {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.ingredient-analysis-form label:hover {
+  background-color: #5848c2;
+  transform: translateY(-2px);
+}
+
+/* Upload Button */
+.ingredient-analysis-form button[type="submit"] {
+  background-color: #55dc59;
+  color: white;
+}
+
+.ingredient-analysis-form button[type="submit"]:hover {
+  background-color: #35aa37;
+  transform: translateY(-2px);
+}
+
+/* Delete Button */
+.ingredient-analysis-form .delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.ingredient-analysis-form .delete-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .uploaded-image img {
+    max-width: 90%;
+    max-height: 300px;
+  }
+
+  .ingredient-analysis-form label,
+  .ingredient-analysis-form button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+.response {
+  font-size: 1rem;
+  color: #2c3e50;
+  background: #ecf0f1;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 5px solid #3498db;
+}
+
+.extracted-ingredients {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.extracted-ingredients h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.extracted-ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.extracted-ingredients > ul > li {
+  background: #f7f9fa;
+  margin: 1rem 0;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.extracted-ingredients > ul > li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.extracted-ingredients li ul {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ecf0f1;
+  border-radius: 6px;
+}
+
+.extracted-ingredients li ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.extracted-ingredients li ul li:last-child {
+  border-bottom: none;
+}
+
+.extracted-ingredients li ul li span {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.empty-message {
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .ingredient-analysis {
+      padding: 15px;
+      margin: 10px;
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+
+  .ingredient-analysis-form button,
+  .ingredient-analysis-form label {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+  }
+
+  .extracted-ingredients li ul {
+      padding: 0.5rem;
+  }
+}
+.safety-indicator {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem;
+  gap: 0.75rem;
+}
+
+.safety-symbol {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.safety-unsafe {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.safety-unsafe .safety-symbol {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.safety-caution {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.safety-caution .safety-symbol {
+  background-color: #f57c00;
+  color: white;
+}
+
+.safety-safe {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.safety-safe .safety-symbol {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.safety-level {
+  flex-grow: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .safety-indicator {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .safety-symbol {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Ensures it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background overlay */
+  z-index: 9999; /* Ensures it appears above all content */
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader p {
+  margin-top: 10px;
+  color: #2c3e50;
+  font-size: 16px;
+  text-align: center; /* Ensures text is centered below the spinner */
+}
+

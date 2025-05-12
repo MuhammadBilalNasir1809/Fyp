@@ -1,0 +1,20 @@
+/* Global Styles for Forgot Password */
+.forgot-password-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d8cf8;
+  }
+  .btn-dark-green {
+    background-color: #006400; /* Dark green color */
+    border-color: #006400; /* Dark green border */
+    color: white; /* White text */
+  }
+  
+  .btn-dark-green:hover {
+    background-color: #004d00; /* Slightly darker green on hover */
+    border-color: #004d00;
+    color: white;
+  }
+  

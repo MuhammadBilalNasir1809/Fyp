@@ -1,0 +1,73 @@
+.features {
+    text-align: center;
+    padding: 20px;
+}
+
+.my-features {
+    font-size: 2rem;
+    color: #333; /* Darker color for the heading */
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 65px;
+}
+
+.feature-item {
+    background-color: #fff; /* White background for items */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feature-item:hover {
+    transform: translateY(-10px); /* Lift the item on hover */
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.feature-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black; /* Consistent color scheme for text */
+}
+.feature-item a {
+    color: #FF6F61;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+.feature-item p {
+    color: #555;
+    font-size: 1.1rem;
+}
+.learn-more-button {
+    background: none;
+    border: none;
+    color: #007bff; /* Adjust to your theme color */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+    padding: 0;
+  }
+  
+  .learn-more-button:hover {
+    color: #cadff6; /* Optional: Darker color on hover */
+  }
